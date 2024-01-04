@@ -36,3 +36,208 @@
     transform: rotate(360deg);
   }
 }
+
+/* Manually Added*/
+
+
+.pricetable-header {
+  color: #1F3E72;
+  font-family: 'Inknut Antiqua';
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pricetable-content {
+  color: #1F3E72;
+  font-family: 'Inknut Antiqua';
+}
+
+.pricetable-content-bullet {
+  color: #1F3E72;
+  font-family: 'Inknut Antiqua';
+  font-size: 16px;
+  font-style: bold;
+}
+
+/* Bullets with double rights */
+ul.pricetable-bullet {
+  list-style: none;
+}
+
+.pricetable-bullet li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  color: #1F3E72;
+  font-family: 'Inknut Antiqua';
+  font-size: 20px;
+  font-style: bold;
+}
+
+.pricetable-bullet li::before {
+  content: '\2022'; /* Bullet character */
+  color: #00ff00; /* Green color for the circle */
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-70%);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #00ff00; /* Green color for the circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pricetable-bullet li::after {
+  content: '\2713\2713'; /* Double correct symbol */
+  color: #ffffff; /* White color for the symbols */
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  /* top: 50%; */
+  /* transform: translate(50%, -50%); */
+}
+
+
+/* last section*/
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 300px; /* Set your desired width */
+  margin: 20px auto;
+  height: 400px;
+}
+
+/* Styles for carousel content */
+.carousel-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Styles for text content */
+.carousel-item {
+  min-width: 300px; /* Set your desired width */
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #f0f0f0; /* Set your desired background color */
+  border-radius: 10px; /* Set your desired border radius */
+  display: none;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+/* Styles for round buttons below */
+.carousel-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 5px; */
+  padding: auto;
+}
+
+.carousel-button {
+  width: 9px; /* Set your desired width */
+  height: 9px; /* Set your desired height */
+  background-color: #bbb; /* Set your desired button color */
+  margin: 0 2px;
+  border: none;
+  border-radius: 50%; /* Make the button round */
+  cursor: pointer;
+}
+
+.carousel-button.active {
+  background-color: brown; /* Set your desired active button color */
+  width: 10px; /* Set your desired width */
+  height: 10px;
+}
+
+/* rating */
+*{
+  margin: 0;
+  padding: 0;
+}
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.rate:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.rate:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+.rate-filled{
+  content: '★ ';
+}
+.rate > input:checked ~ label {
+  color: #ffc700;    
+}
+/* .rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+} */
+/* .rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+} */
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+
+
+/*          */
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #000; /* Adjust the color as needed */
+  margin: 0 5px; /* Adjust the spacing between indicators */
+  border: 0; /* Remove border */
+}
+
+.carousel-indicators .active {
+  background-color: #fff; /* Adjust the color for the active indicator */
+}
+
+/**********************************/
+
+
+.colorr,.sec_colorr{
+  background-color: aqua;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+.text{
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.vid{
+  border-radius: 15px;
+}
+.bb{
+  border: 1px solid black;
+}

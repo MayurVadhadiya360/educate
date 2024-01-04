@@ -74,7 +74,7 @@ function Testimonials() {
                                                 <label htmlFor="star1" title="text">1 star</label>
                                                 <br />
                                             </div>
-                                                <p>{Math.round(Number(element.rating))}</p>
+                                                <p>{Number(element.rating)+'★'}</p>
                                             <br />
                                         </div>
                                         <br />

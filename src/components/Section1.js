@@ -11,7 +11,7 @@ function Section1() {
         setShowModal(false);
     };
     return (
-        <div className='my-2' id='home'>
+        <div className='mb-2' id='home'>
             <div className="colorr">
                 <div className="middle container-fluid row">
                     <div className="col-md-12 text-center mt-5">
